@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Digital Profile</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    padding:25px 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#050505;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    border-bottom:2px solid red;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:red;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:red;
+}
+
+/* HOME */
+
+#home{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:140px 80px 80px;
+    text-align:center;
+}
+
+.main{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.right{
+    max-width:700px;
+}
+
+.right h1{
+    font-size:65px;
+    margin-bottom:10px;
+}
+
+.right h1 span{
+    color:red;
+}
+
+.right h2{
+    font-size:35px;
+    color:red;
+    margin-bottom:20px;
+}
+
+.right p{
+    font-size:18px;
+    line-height:1.7;
+    color:#ccc;
+    margin-bottom:25px;
+}
+
+/* SOCIALS */
+
+.socials{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.socials a{
+    width:45px;
+    height:45px;
+    border:2px solid red;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:red;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.socials a:hover{
+    background:red;
+    color:white;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    border:2px solid red;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:red;
+}
+
+/* SECTIONS */
+
+.section{
+    min-height:100vh;
+    padding:120px 80px;
+}
+
+.section-title{
+    font-size:50px;
+    color:red;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+/* BOXES */
+
+.box-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.box{
+    width:300px;
+    background:#0d0d0d;
+    border:1px solid red;
+    padding:30px;
+    border-radius:20px;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(255,0,0,0.3);
+}
+
+.box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px red;
+}
+
+.box h2{
+    color:red;
+    margin-bottom:15px;
+}
+
+.box p{
+    color:#ccc;
+    line-height:1.6;
+}
+
+/* DESIGN IMAGE */
+
+.design-image{
+    width:100%;
+    border-radius:20px;
+    border:2px solid red;
+    transition:0.3s;
+}
+
+.design-image:hover{
+    transform:scale(1.02);
+    box-shadow:0 0 25px red;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+    padding:20px;
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.right h1{
+    font-size:45px;
+}
+
+.right h2{
+    font-size:28px;
+}
+
+.section{
+    padding:120px 25px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">Digital Profile</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#education">Education</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#design">Design</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- HOME -->
+
+<section id="home">
+
+<div class="main">
+
+<div class="right">
+
+<h1>Hi, It's <span>Sangamithra</span></h1>
+
+<h2>Web Designer</h2>
+
+<p>
+I create modern and responsive websites using HTML and CSS. This is my personal digital profile website.
+</p>
+
+<div class="socials">
+
+<a href="#"><i class="fa-brands fa-github"></i></a>
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+<a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+</div>
+
+<a href="#" class="btn">Hire Me</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+
+<h1 class="section-title">Skills</h1>
+
+<div class="box-container">
+
+<div class="box">
+<h2>HTML</h2>
+<p>Create website structure using HTML.</p>
+</div>
+
+<div class="box">
+<h2>CSS</h2>
+<p>Design responsive and attractive websites.</p>
+</div>
+
+<div class="box">
+<h2>MS Office</h2>
+<p>Proficient in Microsoft Office tools including Word, Excel, and PowerPoint.</p>
+</div>
+
+<div class="box">
+<h2>PHP</h2>
+<p>Basic knowledge of PHP for developing dynamic websites.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education" class="section">
+
+<h1 class="section-title">Education</h1>
+
+<div class="box-container">
+
+<div class="box">
+<h2>B.Sc Computer Science</h2>
+<p>M.V. Muthiah Government Arts College</p>
+</div>
+
+<div class="box">
+<h2>Web Design Course</h2>
+<p>Completed HTML & CSS course.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="section">
+
+<h1 class="section-title">Experience</h1>
+
+<div class="box-container">
+
+<div class="box">
+<h2>Portfolio Website</h2>
+<p>Created responsive personal portfolio websites.</p>
+</div>
+
+<div class="box">
+<h2>Internship</h2>
+<p>Naan Mudhalvan Cloud Infrastructure Internship.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- DESIGN -->
+
+<section id="design" class="section">
+
+<h1 class="section-title">Design</h1>
+
+<div class="box-container">
+
+<div class="box" style="width:700px;">
+
+<a href="design.jpg" target="_blank">
+
+<img src="design.jpg" class="design-image">
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+<h1 class="section-title">Contact</h1>
+
+<div class="box-container">
+
+<div class="box">
+<h2>Email</h2>
+<p>sangamithra@gmail.com</p>
+</div>
+
+<div class="box">
+<h2>Phone</h2>
+<p>6369113817</p>
+</div>
+
+<div class="box">
+<h2>Location</h2>
+<p>Dindigul, Tamil Nadu, India</p>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
