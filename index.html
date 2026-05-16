@@ -16,7 +16,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 html{
@@ -40,7 +40,7 @@ nav{
     position:fixed;
     top:0;
     z-index:1000;
-    border-bottom:2px solid red;
+    border-bottom:1px solid rgba(255,0,0,0.4);
 }
 
 .logo{
@@ -122,7 +122,7 @@ nav ul li a:hover{
 .socials a{
     width:45px;
     height:45px;
-    border:2px solid red;
+    border:1px solid rgba(255,0,0,0.5);
     border-radius:50%;
     display:flex;
     justify-content:center;
@@ -142,7 +142,7 @@ nav ul li a:hover{
 .btn{
     display:inline-block;
     padding:14px 35px;
-    border:2px solid red;
+    border:1px solid rgba(255,0,0,0.5);
     border-radius:30px;
     text-decoration:none;
     color:white;
@@ -179,16 +179,22 @@ nav ul li a:hover{
 .box{
     width:300px;
     background:#0d0d0d;
-    border:1px solid red;
+    border:1px solid rgba(255,0,0,0.4);
     padding:30px;
     border-radius:20px;
     transition:0.3s;
-    box-shadow:0 0 15px rgba(255,0,0,0.3);
+    text-align:center;
 }
 
 .box:hover{
     transform:translateY(-10px);
-    box-shadow:0 0 30px red;
+    box-shadow:0 0 12px rgba(255,0,0,0.3);
+}
+
+.box i{
+    font-size:45px;
+    color:red;
+    margin-bottom:20px;
 }
 
 .box h2{
@@ -206,13 +212,12 @@ nav ul li a:hover{
 .design-image{
     width:100%;
     border-radius:20px;
-    border:2px solid red;
+    border:1px solid rgba(255,0,0,0.4);
     transition:0.3s;
 }
 
 .design-image:hover{
     transform:scale(1.02);
-    box-shadow:0 0 25px red;
 }
 
 /* MOBILE */
@@ -287,7 +292,8 @@ nav ul{
 <h2>Web Designer</h2>
 
 <p>
-I create modern and responsive websites using HTML and CSS. This is my personal digital profile website.
+I create modern and responsive websites using HTML and CSS.
+This is my personal digital profile website.
 </p>
 
 <div class="socials">
@@ -319,23 +325,51 @@ I create modern and responsive websites using HTML and CSS. This is my personal 
 <div class="box-container">
 
 <div class="box">
+
+<i class="fa-brands fa-html5"></i>
+
 <h2>HTML</h2>
-<p>Create website structure using HTML.</p>
+
+<p>
+Create website structure using HTML.
+</p>
+
 </div>
 
 <div class="box">
+
+<i class="fa-brands fa-css3-alt"></i>
+
 <h2>CSS</h2>
-<p>Design responsive and attractive websites.</p>
+
+<p>
+Design responsive and attractive websites.
+</p>
+
 </div>
 
 <div class="box">
+
+<i class="fa-solid fa-file-word"></i>
+
 <h2>MS Office</h2>
-<p>Proficient in Microsoft Office tools including Word, Excel, and PowerPoint.</p>
+
+<p>
+Proficient in Word, Excel and PowerPoint.
+</p>
+
 </div>
 
 <div class="box">
+
+<i class="fa-brands fa-php"></i>
+
 <h2>PHP</h2>
-<p>Basic knowledge of PHP for developing dynamic websites.</p>
+
+<p>
+Basic knowledge of PHP for dynamic websites.
+</p>
+
 </div>
 
 </div>
@@ -351,13 +385,27 @@ I create modern and responsive websites using HTML and CSS. This is my personal 
 <div class="box-container">
 
 <div class="box">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
 <h2>B.Sc Computer Science</h2>
-<p>M.V. Muthiah Government Arts College</p>
+
+<p>
+M.V. Muthiah Government Arts College
+</p>
+
 </div>
 
 <div class="box">
+
+<i class="fa-solid fa-book"></i>
+
 <h2>Web Design Course</h2>
-<p>Completed HTML & CSS course.</p>
+
+<p>
+Completed HTML & CSS course.
+</p>
+
 </div>
 
 </div>
@@ -373,13 +421,27 @@ I create modern and responsive websites using HTML and CSS. This is my personal 
 <div class="box-container">
 
 <div class="box">
+
+<i class="fa-solid fa-laptop-code"></i>
+
 <h2>Portfolio Website</h2>
-<p>Created responsive personal portfolio websites.</p>
+
+<p>
+Created responsive personal portfolio websites.
+</p>
+
 </div>
 
 <div class="box">
+
+<i class="fa-solid fa-cloud"></i>
+
 <h2>Internship</h2>
-<p>Naan Mudhalvan Cloud Infrastructure Internship.</p>
+
+<p>
+Naan Mudhalvan Cloud Infrastructure Internship.
+</p>
+
 </div>
 
 </div>
@@ -417,18 +479,39 @@ I create modern and responsive websites using HTML and CSS. This is my personal 
 <div class="box-container">
 
 <div class="box">
+
+<i class="fa-solid fa-envelope"></i>
+
 <h2>Email</h2>
-<p>sangamithra@gmail.com</p>
+
+<p>
+sangamithra@gmail.com
+</p>
+
 </div>
 
 <div class="box">
+
+<i class="fa-solid fa-phone"></i>
+
 <h2>Phone</h2>
-<p>6369113817</p>
+
+<p>
+6369113817
+</p>
+
 </div>
 
 <div class="box">
+
+<i class="fa-solid fa-location-dot"></i>
+
 <h2>Location</h2>
-<p>Dindigul, Tamil Nadu, India</p>
+
+<p>
+Dindigul, Tamil Nadu, India
+</p>
+
 </div>
 
 </div>
